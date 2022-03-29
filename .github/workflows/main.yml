@@ -29,4 +29,4 @@ jobs:
           cmake -B ./output
           cd output
           make
-          ./equation
+          ./solver
