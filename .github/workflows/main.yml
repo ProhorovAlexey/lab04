@@ -1,0 +1,29 @@
+name: My_build
+on: [ push, pull_request ]
+
+jobs:
+  hello_world_application:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: git clone
+        uses: actions/checkout@v2
+
+      - name: Building_hello_world
+        working-directory: hello_world_application
+        run: |
+          cmake ./output
+          cd output
+          make
+          ./hello_world
+  solver_application:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Building_solver_aplication
+        working-directory: solver_application
+        run: |
+          cmake ./output
+          cd output
+          make
+          ./equation
