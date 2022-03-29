@@ -12,7 +12,7 @@ jobs:
       - name: Building_hello_world
         working-directory: hello_world_application
         run: |
-          cmake ./output
+          cmake -B ./output
           cd output
           make
           ./hello_world
@@ -23,7 +23,7 @@ jobs:
       - name: Building_solver_aplication
         working-directory: solver_application
         run: |
-          cmake ./output
+          cmake -B ./output
           cd output
           make
           ./equation
