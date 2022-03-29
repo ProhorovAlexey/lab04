@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: git clone
+        uses: actions/checkout@v2
+    
       - name: Building_solver_aplication
         working-directory: solver_application
         run: |
