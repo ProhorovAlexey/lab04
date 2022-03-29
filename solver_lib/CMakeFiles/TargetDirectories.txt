@@ -1,3 +1,0 @@
-/home/userlinux/lab03/solver_lib/CMakeFiles/rebuild_cache.dir
-/home/userlinux/lab03/solver_lib/CMakeFiles/edit_cache.dir
-/home/userlinux/lab03/solver_lib/CMakeFiles/solver_lib.dir
