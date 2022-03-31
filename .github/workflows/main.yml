@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: git clone
+      - name: checkout
         uses: actions/checkout@v2
 
       - name: Building_hello_world
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: git clone
+      - name: checkout
         uses: actions/checkout@v2
     
       - name: Building_solver_aplication
